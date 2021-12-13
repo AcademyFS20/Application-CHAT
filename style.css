@@ -1,0 +1,142 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    scroll-behavior:smooth;
+    font-size:62,5%;
+}
+
+body {
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: black;
+  }
+
+/* HOME */
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.forme{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+}
+.container2{
+    display:flex; 
+    flex-direction: row;
+    justify-content:center;
+    background-color:blue;
+}
+
+.signup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:white;
+
+}
+
+.home{
+    background-image: url("assets/background.png");
+    background-size: cover;
+    width:100%;
+    background-attachment: no-repeat;
+    float:left;
+}
+
+.title{
+    color:white;
+}
+
+.text{
+    color:white;
+
+}
+
+/* LOGIN */
+
+
+.form2 {
+    align-items: center;                                                                
+}
+
+/* SIGNUP */
+
+
+/* DASHBOARD */
+
+
+
+
+.grid-container {
+    display: grid;
+    width:100%;
+    height: auto;
+    grid-template-areas:
+        'profil head head head head'
+        'side main main main main'
+        'sidee footer footer footer footer';
+
+}
+
+.item1{
+    grid-area: profil;
+    background-color:red;
+    height: 7rem;
+    max-width: 12rem;
+}
+
+.item2 { 
+    grid-area: head; 
+    background-color: green;
+}
+.item3 { 
+    grid-area: side; 
+    background-color: grey;
+    height: 30rem;
+    max-width: 12rem;
+
+}
+
+.item4 { 
+    grid-area: main;    
+    background-color: orange;
+    height: 30rem;
+}
+
+.item5 { 
+    grid-area: sidee; 
+    background-color: grey;
+    height: 9rem;
+    max-width: 12rem;
+}
+
+.item6 {
+    grid-area: footer; 
+    border: 1px solid black;
+    height: 9rem;
+
+}
+
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
