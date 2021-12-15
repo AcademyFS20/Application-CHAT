@@ -20,7 +20,10 @@ ul{
 
 a{
     color: black;
-  }
+    text-decoration: none;
+}
+
+
 
 /* HOME */
 
@@ -89,28 +92,134 @@ a{
     width:100%;
     height: auto;
     grid-template-areas:
-        'profil head head head head'
-        'side main main main main'
-        'sidee footer footer footer footer';
+        'head head head head head head'
+        'side content content content content content'
+        'side content content content content content'
+        'side footer footer footer footer footer';
 
 }
+
+.header{
+    grid-area: head;
+    background-color: #1C96C5;
+    height: 12vh;
+    color:white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.head{
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+}
+
+
+.aside {
+    grid-area:side;
+    background-color: #20A7DB;    ;
+    height: 90vh;
+    width: 15vw;
+}
+
+.content{
+    grid-area: content;
+    border: solid 2px black;
+    height: auto;
+    width: 90vw;
+}
+
+.forma{
+    grid-area: footer;
+    background-color:grey;
+    height: 8rem;
+
+}
+
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+   
+}
+
+
+
+.avatar{
+    width:90%;
+    align-items: center;
+
+}
+ul{
+    align-items: center;
+
+}
+
+.message{
+    width: 25rem;
+    height: 20rem;
+    font-size: 40px;
+
+}
+
+input{
+    box-sizing:content-box;
+    font-size: 40px;
+    line-height: 20rem;
+    height: 20rem;
+}
+
+
+.forma{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    gap:7rem;
+}
+
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: #ffffff;
+    border-left: 0;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.rowchat{
+    display:flex;
+    flex-direction:row;
+    gap: 1rem;
+}
+
+/*
 
 .item1{
     grid-area: profil;
     background-color:red;
-    height: 7rem;
-    max-width: 12rem;
+    height: 8rem;
+    width: 100%;
 }
 
 .item2 { 
     grid-area: head; 
     background-color: green;
+    width: 100%;
 }
 .item3 { 
     grid-area: side; 
     background-color: grey;
     height: 30rem;
-    max-width: 12rem;
+    width: 80%;
 
 }
 
@@ -124,7 +233,7 @@ a{
     grid-area: sidee; 
     background-color: grey;
     height: 9rem;
-    max-width: 12rem;
+    width: 80%;
 }
 
 .item6 {
@@ -140,3 +249,22 @@ a{
     justify-content: center;
    
 }
+
+.message{
+    width: 100%;
+    line-height: 120px;
+}
+
+h3{
+    position: relative;
+    float: left;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+}
+*/
