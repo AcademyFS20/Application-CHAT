@@ -31,7 +31,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 800px;
+    height: 100%;
 }
 
 
@@ -133,19 +133,22 @@ a{
     grid-area:side;
     background-color: #20A7DB;    ;
     height: 90vh;
-    width: 15vw;
 }
 
 .content{
     grid-area: content;
-    border: solid 2px black;
-    height: auto;
+    height: 30.8rem;
     width: 90vw;
+    overflow: scroll;
+    overflow-x: hidden;
+    border: solid 2px black;
+
+    
 }
 
 .forma{
     grid-area: footer;
-    background-color:grey;
+    background-color:#B8B8B8;
     height: 8rem;
 
 }
@@ -170,19 +173,18 @@ ul{
 
 }
 
+
+
 .message{
-    width: 25rem;
-    height: 20rem;
-    font-size: 40px;
-
-}
-
-input{
     box-sizing:content-box;
-    font-size: 40px;
+    font-size: 20px;
     line-height: 20rem;
-    height: 20rem;
+    height: 6rem;
+    width: 40rem;
+    margin-top: 2%;
+    margin-left:1%;
 }
+
 
 
 .forma{
@@ -237,13 +239,14 @@ input{
     flex-direction:row;
     gap:2%;
     margin-left: 55%;
+    margin-right: 2%;
+
 }
 
 .rowtextright{
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
-
 }
 
 .flextextright{
@@ -253,8 +256,7 @@ input{
     color:white;
     font-weight:bold;
     width:45%;
-
-    
+    margin-right: 2%;
 
 }
 
@@ -263,76 +265,21 @@ input{
     margin-top: 1rem;
 }
 
-
-/* DIALOG BUBBLE */
-
-
-
-/*
-
-.item1{
-    grid-area: profil;
-    background-color:red;
-    height: 8rem;
-    width: 100%;
+.file{
+    margin-top: 1rem;
 }
 
-.item2 { 
-    grid-area: head; 
-    background-color: green;
-    width: 100%;
+::-webkit-box-shadow{
+	background-color: #B8B8B8	;
 }
-.item3 { 
-    grid-area: side; 
-    background-color: grey;
-    height: 30rem;
-    width: 80%;
-
+::-webkit-scrollbar
+{
+	width: 16px;
+	background-color: #B8B8B8	;
 }
 
-.item4 { 
-    grid-area: main;    
-    background-color: orange;
-    height: 30rem;
+::-webkit-scrollbar-thumb
+{
+	background-color: #606060		;
 }
 
-.item5 { 
-    grid-area: sidee; 
-    background-color: grey;
-    height: 9rem;
-    width: 80%;
-}
-
-.item6 {
-    grid-area: footer; 
-    border: 1px solid black;
-    height: 9rem;
-
-}
-
-.sidebar{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-   
-}
-
-.message{
-    width: 100%;
-    line-height: 120px;
-}
-
-h3{
-    position: relative;
-    float: left;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.avatar{
-    width: 50px;
-    height: 50px;
-}
-
-*/
