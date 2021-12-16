@@ -31,6 +31,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 800px;
 }
 
 
@@ -61,13 +62,21 @@ a{
     width:100%;
     background-attachment: no-repeat;
     float:left;
+    margin-left: -8.5rem;
+    padding:30px;
+}
+
+.form{
+    margin-left: 2.5rem;    
 }
 
 .title{
     color:white;
+    margin-top: 2rem;
 }
 
 .text{
+    margin-top: 2rem;
     color:white;
 
 }
@@ -81,6 +90,9 @@ a{
 
 /* SIGNUP */
 
+.signup{
+    margin-top: 3rem;
+}
 
 /* DASHBOARD */
 
@@ -181,25 +193,80 @@ input{
 }
 
 
-.speech-bubble:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 0;
-    height: 0;
-    border: 20px solid transparent;
-    border-right-color: #ffffff;
-    border-left: 0;
-    margin-top: -20px;
-    margin-left: -20px;
-}
+
+/* BUBBLE TEXT LEFT SIDE */
 
 .rowchat{
     display:flex;
     flex-direction:row;
-    gap: 1rem;
+    gap:2%;
+    margin-left: 2%;
+
 }
+
+.messagetext{
+    border: 2px solid green;
+}
+
+.columnchat{
+    display:flex;
+    flex-direction:column;
+}
+
+.flextext{
+    margin-left: 2%;
+    width:45%;
+    border: 2px solid #a0d9ef;
+    border-radius: 7px;
+    background-color:#a0d9ef;
+    color:white;
+    font-weight:bold;
+}
+
+/* RIGHT SIDE BUBBLE TEXT */
+
+.columnchatright{
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+.rowchatright{
+    display:flex;
+    flex-direction:row;
+    gap:2%;
+    margin-left: 55%;
+}
+
+.rowtextright{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.flextextright{
+    border: 2px solid #a0d9ef;
+    border-radius: 7px;
+    background-color:#a0d9ef;
+    color:white;
+    font-weight:bold;
+    width:45%;
+
+    
+
+}
+
+
+.beginchat{
+    margin-top: 1rem;
+}
+
+
+/* DIALOG BUBBLE */
+
+
 
 /*
 
@@ -267,4 +334,5 @@ h3{
     width: 50px;
     height: 50px;
 }
+
 */
